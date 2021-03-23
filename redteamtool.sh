@@ -29,7 +29,7 @@ echo " ">> $filename
 #check commands
 echo "commands:">> $filename
 #go through these commands to check that they are installed and current user has permissions to run them
-for command in "ls" "ssh 127.0.0.1" "ping -c 1 8.8.8.8" "pwd" "useradd hacker" "sudo" "nano -h" "vim -h" "curl www.google.com" "wget google.come" "ps" "df" "net time" "cp /bin/ls fakels" "chmod 777 fakels" "chown hacker fakels" "find fakels" "grep" "locate fakels" "touch fakels" "lsof" "history" "userdel hacker"
+for command in "sudo" "yum install -y apache" "apt-get update" "git clone https://github.com/nickman3422/CDT_redteamtool "   "rmdir CDT_redteamtool" "ls" "ssh 127.0.0.1" "ping -c 1 8.8.8.8" "pwd" "useradd hacker" "nano -h" "vim -h" "curl www.google.com" "wget google.come" "ps" "df" "net time" "cp /bin/ls fakels" "chmod 777 fakels" "chown hacker fakels" "find fakels" "grep" "locate fakels" "touch fakels" "lsof" "history" "userdel hacker"
 do
 	
 	commandArray=($command)	
